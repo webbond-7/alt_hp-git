@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>資料請求・無料相談｜アルト｜就労継続支援B型</title>
+  <meta name="description" content="鳥取県米子市の就労継続支援B型事業所「アルト」の資料請求・無料相談" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Zen+Kaku+Gothic+Antique:wght@500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="site-header__wrapper l-container">
+      <div class="site-header__inner">
+        <div class="site-header__left">
+          <a class="site-header__brand" href="index.html" aria-label="アルト トップへ">
+            <span class="site-header__logo">
+              <img src="figma-assets/logo-symbol.svg" alt="" class="site-header__symbol" width="44" height="44" />
+              <span class="site-header__logo-text">
+                <span class="site-header__logo-sub">就労継続支援B型</span>
+                <span class="site-header__logo-main">アルト</span>
+              </span>
+            </span>
+          </a>
+          <span class="site-header__tag site-header__tag--sp">鳥取県米子市</span>
+        </div>
+
+        <button class="site-header__menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-header__nav" aria-label="グローバルナビゲーション">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="index.html#top">トップ</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="service.html">サービス紹介</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="schedule.html">1日の過ごし方</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="staff.html">スタッフ紹介</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="flow.html">ご利用の流れ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero：資料請求・無料相談（Figma SP） -->
+    <section class="service-hero contact-hero" aria-label="資料請求・無料相談">
+      <div class="service-hero__inner">
+        <h1 class="service-hero__title">資料請求・無料相談</h1>
+        <p class="service-hero__sub">Contact</p>
+      </div>
+    </section>
+
+    <!-- 説明文（Figma：ご入力メールアドレスに…） -->
+    <section class="contact-intro" aria-labelledby="contact-intro-text">
+      <div class="contact-intro__inner l-container">
+        <p id="contact-intro-text" class="contact-intro__text">ご入力メールアドレスに電子パンフレットをお送りします。資料請求と無料相談のご希望の方はチェックの上、ご記載ください。</p>
+      </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section class="contact-form-section" aria-labelledby="contact-form-title">
+      <div class="contact-form-section__inner l-container">
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-name">
+              <span class="contact-form__label-text">お名前</span>
+              <span class="contact-form__badge contact-form__badge--required">必須</span>
+            </label>
+            <input class="contact-form__input" id="contact-name" type="text" name="name" placeholder="山田 太郎" autocomplete="name" />
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-email">
+              <span class="contact-form__label-text">メールアドレス</span>
+              <span class="contact-form__badge contact-form__badge--required">必須</span>
+            </label>
+            <input class="contact-form__input" id="contact-email" type="email" name="email" placeholder="yamada@example.com" autocomplete="email" />
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-tel">
+              <span class="contact-form__label-text">電話番号</span>
+              <span class="contact-form__badge contact-form__badge--optional">任意</span>
+            </label>
+            <input class="contact-form__input" id="contact-tel" type="tel" name="tel" placeholder="09012345678" autocomplete="tel" />
+          </div>
+
+          <div class="contact-form__field contact-form__field--radio-group">
+            <span class="contact-form__label">
+              <span class="contact-form__label-text">希望連絡方法</span>
+              <span class="contact-form__badge contact-form__badge--required">必須</span>
+            </span>
+            <div class="contact-form__radios" role="group" aria-label="希望連絡方法">
+              <label class="contact-form__radio-label">
+                <input class="contact-form__radio" type="radio" name="contact_method" value="mail" checked />
+                <span class="contact-form__radio-text">メール</span>
+              </label>
+              <label class="contact-form__radio-label">
+                <input class="contact-form__radio" type="radio" name="contact_method" value="tel" />
+                <span class="contact-form__radio-text">電話</span>
+              </label>
+              <label class="contact-form__radio-label">
+                <input class="contact-form__radio" type="radio" name="contact_method" value="any" />
+                <span class="contact-form__radio-text">いずれでも可</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="contact-form__field contact-form__field--radio-group">
+            <span class="contact-form__label">
+              <span class="contact-form__label-text">無料相談について</span>
+              <span class="contact-form__badge contact-form__badge--required">必須</span>
+            </span>
+            <div class="contact-form__radios" role="group" aria-label="無料相談について">
+              <label class="contact-form__radio-label">
+                <input class="contact-form__radio" type="radio" name="consultation" value="yes" checked />
+                <span class="contact-form__radio-text">希望する</span>
+              </label>
+              <label class="contact-form__radio-label">
+                <input class="contact-form__radio" type="radio" name="consultation" value="no" />
+                <span class="contact-form__radio-text">希望しない</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-body">
+              <span class="contact-form__label-text">お問い合わせ内容</span>
+              <span class="contact-form__badge contact-form__badge--optional">任意</span>
+            </label>
+            <textarea class="contact-form__textarea" id="contact-body" name="body" rows="5" placeholder="ご質問やご相談内容をご記入ください"></textarea>
+          </div>
+
+          <div class="contact-form__field contact-form__field--checkbox">
+            <label class="contact-form__checkbox-label">
+              <input class="contact-form__checkbox" type="checkbox" name="privacy" required />
+              <span class="contact-form__checkbox-box" aria-hidden="true"></span>
+              <span class="contact-form__checkbox-text"><a href="#" class="contact-form__privacy-link">プライバシーポリシー</a>に同意する</span>
+            </label>
+          </div>
+
+          <div class="contact-form__submit-wrap">
+            <button class="contact-form__submit" type="submit" disabled>送信する</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA（Figma：あなたの「働きたい」を、もう一度。＋ よくあるご質問・ご利用者のお声 ＋ 資料請求・無料相談） -->
+    <section class="section-cta" id="contact">
+      <div class="section-cta__inner l-container">
+        <div class="section-cta__block">
+          <h2 class="section-cta__title">
+            あなたの<span class="section-cta__quote">「</span><span class="section-cta__accent">働きたい</span><span class="section-cta__quote">」</span>を、もう一度。
+          </h2>
+          <div class="section-cta__desc">
+            <p class="section-cta__desc-line">一人で悩まなくて大丈夫。あなたのペースで</p>
+            <p class="section-cta__desc-line">少しずつ前に進めるように</p>
+            <p class="section-cta__desc-line">スタッフが寄り添います。</p>
+          </div>
+          <ul class="section-cta__links">
+            <li><a href="qa.html" class="section-cta__link"><span class="section-cta__link-arrow" aria-hidden="true"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.386594 5.53693C0.139046 5.79236 0 6.1386 0 6.49961C0 6.86062 0.139046 7.20687 0.386594 7.4623L5.37104 12.6009C5.49383 12.7274 5.6396 12.8278 5.80003 12.8963C5.96046 12.9648 6.13241 13 6.30606 13C6.47971 13 6.65166 12.9648 6.8121 12.8963C6.97253 12.8278 7.1183 12.7274 7.24109 12.6009C7.36388 12.4743 7.46128 12.3241 7.52773 12.1588C7.59418 11.9934 7.62839 11.8162 7.62839 11.6373C7.62839 11.4583 7.59418 11.2811 7.52773 11.1158C7.46128 10.9504 7.36388 10.8002 7.24109 10.6737L4.51269 7.86191H14.6781C15.0287 7.86191 15.3649 7.71838 15.6128 7.4629C15.8607 7.20742 16 6.86091 16 6.49961C16 6.13831 15.8607 5.79181 15.6128 5.53633C15.3649 5.28085 15.0287 5.13732 14.6781 5.13732H4.51269L7.24109 2.32555C7.48896 2.06999 7.62816 1.72342 7.62808 1.36209C7.62799 1.00075 7.48863 0.654254 7.24065 0.398813C6.99266 0.143372 6.65637 -8.51219e-05 6.30575 3.78931e-08C5.95513 8.51977e-05 5.61891 0.143706 5.37104 0.399267L0.386594 5.53693Z" fill="url(#cta-arrow-contact)" /><defs><linearGradient id="cta-arrow-contact" x1="0" y1="2.889" x2="16.047" y2="3.156" gradientUnits="userSpaceOnUse"><stop stop-color="#72DA6E" /><stop offset="1" stop-color="#6FC86B" /></linearGradient></defs></svg></span>よくあるご質問</a></li>
+            <li><a href="voice.html" class="section-cta__link"><span class="section-cta__link-arrow" aria-hidden="true"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.386594 5.53693C0.139046 5.79236 0 6.1386 0 6.49961C0 6.86062 0.139046 7.20687 0.386594 7.4623L5.37104 12.6009C5.49383 12.7274 5.6396 12.8278 5.80003 12.8963C5.96046 12.9648 6.13241 13 6.30606 13C6.47971 13 6.65166 12.9648 6.8121 12.8963C6.97253 12.8278 7.1183 12.7274 7.24109 12.6009C7.36388 12.4743 7.46128 12.3241 7.52773 12.1588C7.59418 11.9934 7.62839 11.8162 7.62839 11.6373C7.62839 11.4583 7.59418 11.2811 7.52773 11.1158C7.46128 10.9504 7.36388 10.8002 7.24109 10.6737L4.51269 7.86191H14.6781C15.0287 7.86191 15.3649 7.71838 15.6128 7.4629C15.8607 7.20742 16 6.86091 16 6.49961C16 6.13831 15.8607 5.79181 15.6128 5.53633C15.3649 5.28085 15.0287 5.13732 14.6781 5.13732H4.51269L7.24109 2.32555C7.48896 2.06999 7.62816 1.72342 7.62808 1.36209C7.62799 1.00075 7.48863 0.654254 7.24065 0.398813C6.99266 0.143372 6.65637 -8.51219e-05 6.30575 3.78931e-08C5.95513 8.51977e-05 5.61891 0.143706 5.37104 0.399267L0.386594 5.53693Z" fill="url(#cta-arrow-contact2)" /><defs><linearGradient id="cta-arrow-contact2" x1="0" y1="2.889" x2="16.047" y2="3.156" gradientUnits="userSpaceOnUse"><stop stop-color="#72DA6E" /><stop offset="1" stop-color="#6FC86B" /></linearGradient></defs></svg></span>ご利用者のお声</a></li>
+          </ul>
+        </div>
+        <div class="section-cta__btn">
+          <a class="c-btn c-btn--cta" href="#main">
+            <span class="c-btn__icon">
+              <img src="figma-assets/icon-mail-3.svg" alt="" width="24" height="24" />
+            </span>
+            <span class="c-btn__label">資料請求・無料相談</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner l-container">
+      <div class="site-footer__content">
+        <div class="site-footer__brand">
+          <img src="figma-assets/logo-symbol.svg" alt="" class="site-footer__symbol" />
+          <div class="site-footer__brand-text">
+            <span class="site-footer__brand-sub">就労継続支援B型</span>
+            <span class="site-footer__brand-main">アルト</span>
+          </div>
+        </div>
+        <div class="site-footer__info">
+          <p class="site-footer__label">住所</p>
+          <p>〒683-0043<br />鳥取県米子市末広町227</p>
+        </div>
+        <div class="site-footer__contact">
+          <p class="site-footer__label">お問い合わせ</p>
+          <p>tel. 050-1722-8917</p>
+        </div>
+        <ul class="site-footer__social">
+          <li><a href="#" aria-label="Facebook"><img src="figma-assets/social-facebook.svg" alt="" /></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="figma-assets/social-instagram.svg" alt="" /></a></li>
+          <li><a href="#" aria-label="X"><img src="figma-assets/social-x.svg" alt="" /></a></li>
+          <li><a href="#" aria-label="LinkedIn"><img src="figma-assets/social-linkedin.svg" alt="" /></a></li>
+          <li><a href="#" aria-label="YouTube"><img src="figma-assets/social-youtube.svg" alt="" /></a></li>
+        </ul>
+        <nav class="site-footer__links">
+          <ul class="site-footer__links-col">
+            <li><a href="service.html">サービス紹介</a></li>
+            <li><a href="schedule.html">一日の過ごし方</a></li>
+            <li><a href="flow.html">ご利用の流れ</a></li>
+            <li><a href="index.html#voices">利用者の声</a></li>
+            <li><a href="introduction.html">事業所紹介</a></li>
+          </ul>
+          <ul class="site-footer__links-col">
+            <li><a href="staff.html">スタッフ紹介</a></li>
+            <li><a href="qa.html">よくあるご質問</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__divider"></div>
+        <div class="site-footer__copy">
+          <span>Copyright © 2025. わこう介護サービス</span>
+          <a href="#">プライバシーポリシー</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

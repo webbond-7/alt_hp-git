@@ -3211,3 +3211,1413 @@ a {
     font-size: 1.125rem;
   }
 }
+
+/* ========================================
+   Voice Page Styles（Figma node 1169-2680 / voice フォルダ仕様）
+   スタッフ紹介ページ / フォント：Zen Maru Gothic（見出し）、Zen Kaku Gothic Antique（本文）
+   ======================================== */
+
+/* Hero は .service-hero で共通管理（voice-hero はクラス併用のみ） */
+
+/* Intro：スタッフ紹介の説明文 */
+.voice-intro {
+  width: 100%;
+  padding: 3rem 1rem;
+  background: #fff;
+}
+
+.voice-intro__inner {
+  max-width: 28rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.voice-intro__text {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.12rem;
+  color: var(--c-text);
+  margin: 0;
+}
+
+/* Staff section：スタッフカード一覧 */
+.voice-staff {
+  width: 100%;
+  padding: 0 1rem 2.5rem;
+  background: #fff;
+}
+
+.voice-staff__inner {
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.voice-staff__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.voice-staff__item {
+  margin: 0;
+}
+
+/* スタッフカード */
+.voice-staff-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.voice-staff-card__header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--c-green);
+}
+
+.voice-staff-card__name {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0.1125rem;
+  color: var(--c-text);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.voice-staff-card__role {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
+  color: var(--c-green);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.voice-staff-card__body {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1), 0 0.0625rem 0.125rem -0.0625rem rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.voice-staff-card__quote {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.voice-staff-card__quote-mark {
+  display: inline-block;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.voice-staff-card__quote-mark--open {
+  align-self: flex-start;
+}
+
+.voice-staff-card__quote-mark--close {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.voice-staff-card__quote-mark svg {
+  display: block;
+  width: 0.8125rem;
+  height: 0.578rem;
+}
+
+.voice-staff-card__text {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.0875rem;
+  color: var(--c-text);
+  margin: 0;
+}
+
+.voice-staff-card__image {
+  width: 100%;
+  aspect-ratio: 295 / 167;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
+.voice-staff-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Voice: 769px+（タブレット） */
+@media (min-width: 769px) {
+  .voice-intro {
+    padding: 4rem 1rem;
+  }
+
+  .voice-intro__inner {
+    max-width: 45rem;
+  }
+
+  .voice-intro__text {
+    font-size: 0.8125rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .voice-staff {
+    padding: 0 1.5rem 4rem;
+  }
+
+  .voice-staff__inner {
+    max-width: 45rem;
+  }
+
+  .voice-staff__list {
+    gap: 2.5rem;
+  }
+
+  .voice-staff-card__name {
+    font-size: 1.125rem;
+  }
+
+  .voice-staff-card__role {
+    font-size: 0.875rem;
+  }
+
+  .voice-staff-card__body {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .voice-staff-card__text {
+    font-size: 0.875rem;
+  }
+}
+
+/* Voice: 1024px+（PC・Figma SP準拠の拡張） */
+@media (min-width: 1024px) {
+  .voice-intro {
+    padding: 5rem 2rem;
+  }
+
+  .voice-intro__inner {
+    max-width: min(72rem, calc(100% - 3rem));
+  }
+
+  .voice-intro__text {
+    font-size: 0.75rem;
+    letter-spacing: 0.12rem;
+  }
+
+  .voice-staff {
+    padding: 0 2rem 5rem;
+  }
+
+  .voice-staff__inner {
+    max-width: min(72rem, calc(100% - 3rem));
+  }
+
+  .voice-staff__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Voice: 1280px+（広いPC） */
+@media (min-width: 1280px) {
+  .voice-intro__inner,
+  .voice-staff__inner {
+    max-width: min(75rem, calc(100% - 4rem));
+  }
+}
+
+/* ========================================
+   Voice Page（voice02）利用者のお声 - テストモニアルカード
+   ======================================== */
+.voice-testimonials {
+  width: 100%;
+  background: #fff;
+}
+
+.voice-testimonials__intro {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.voice-testimonials__title {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+  color: var(--c-text);
+  margin: 0 0 1rem;
+}
+
+.voice-testimonials__lead {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.075rem;
+  color: var(--c-text);
+  margin: 0;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.voice-testimonials__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.voice-testimonial {
+  width: 100%;
+  padding-bottom: 2.5rem;
+}
+
+.voice-testimonial--white {
+  background: #fff;
+}
+
+.voice-testimonial--gray {
+  background: #f9f9f9;
+}
+
+.voice-testimonial__inner {
+  padding: 0 1rem;
+}
+
+.voice-testimonial-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 1px 1px 2.7px rgba(0, 0, 0, 0.15);
+}
+
+.voice-testimonial-card__top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.voice-testimonial-card__tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3125rem 0.75rem;
+  border-radius: 9999px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.voice-testimonial-card__tag--female {
+  background: #ff7286;
+}
+
+.voice-testimonial-card__tag--male {
+  background: var(--c-green);
+}
+
+.voice-testimonial-card__duration {
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #666;
+}
+
+.voice-testimonial-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.voice-testimonial-card__row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.voice-testimonial-card__avatar {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 1px 1px 2.7px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.voice-testimonial-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.voice-testimonial-card__headline {
+  flex: 1;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0.1125rem;
+  line-height: 1.4;
+  color: var(--c-text);
+  margin: 0;
+}
+
+.voice-testimonial-card__text {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.0875rem;
+  color: var(--c-text);
+  margin: 0;
+}
+
+/* Voice testimonials: 768px+ */
+@media (min-width: 768px) {
+  .voice-testimonials__intro {
+    padding: 4rem 1.5rem;
+  }
+
+  .voice-testimonials__title {
+    font-size: 1.375rem;
+  }
+
+  .voice-testimonials__lead {
+    font-size: 0.8125rem;
+    max-width: 36rem;
+  }
+
+  .voice-testimonial {
+    padding-bottom: 3rem;
+  }
+
+  .voice-testimonial__inner {
+    padding: 0 1.5rem;
+    max-width: min(45rem, calc(100% - 2rem));
+    margin: 0 auto;
+  }
+}
+
+/* Voice testimonials: 1024px+ */
+@media (min-width: 1024px) {
+  .voice-testimonials__intro {
+    padding: 5rem 2rem;
+  }
+
+  .voice-testimonials__lead {
+    max-width: 40rem;
+  }
+
+  .voice-testimonial__inner {
+    max-width: min(40rem, calc(100% - 3rem));
+  }
+
+  .voice-testimonial-card__headline {
+    font-size: 1.125rem;
+  }
+
+  .voice-testimonial-card__text {
+    font-size: 0.875rem;
+  }
+}
+
+/* Voice testimonials: 1280px+ */
+@media (min-width: 1280px) {
+  .voice-testimonial__inner {
+    max-width: min(42rem, calc(100% - 4rem));
+  }
+}
+
+/* ========================================
+   Introduction page（事業所紹介）
+   SP first, then 768px / 1024px
+   ======================================== */
+.intro-page {
+  width: 100%;
+  background: #fff;
+}
+
+.intro-page__inner {
+  padding: 2.5rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Section title: green bar + title (Figma) */
+.intro-page__section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  letter-spacing: 0.1125rem;
+  color: var(--c-text);
+  margin: 0 0 0.25rem;
+}
+
+.intro-page__section-bar {
+  flex-shrink: 0;
+  width: 4px;
+  height: 24px;
+  background: linear-gradient(180deg, #72DA6E 0%, #6FC86B 100%);
+  border-radius: 2px;
+  display: block;
+}
+
+.intro-page__section-sub {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 1rem;
+}
+
+.intro-page__section-lead {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 1rem;
+}
+
+.intro-page__body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.0875rem;
+  color: var(--c-text);
+  margin: 0;
+}
+
+/* Access block */
+.intro-page__access {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.intro-page__access-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.intro-page__access-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-page__access-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.intro-page__access-label {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  color: var(--c-text);
+  margin: 0 0 0.25rem;
+}
+
+.intro-page__access-text {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.0875rem;
+  color: var(--c-text);
+  margin: 0;
+  padding-left: 2rem;
+}
+
+.intro-page__access-note {
+  font-size: 0.75rem;
+  letter-spacing: 0.075rem;
+  color: var(--c-primary);
+  margin: 0.25rem 0 0;
+  padding-left: 2rem;
+}
+
+.intro-page__map-wrap {
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1.304px 2.607px -0.652px rgba(0, 0, 0, 0.1), 0 1.304px 2.607px -1.304px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1762 / 1166;
+}
+
+.intro-page__map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mission box (green bg) */
+.intro-page__mission-box {
+  background: #eff6e5;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.intro-page__mission-catch {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  letter-spacing: 0.1125rem;
+  color: var(--c-green);
+  text-align: center;
+  margin: 0 0 0.75rem;
+}
+
+.intro-page__mission-text {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.0875rem;
+  color: var(--c-text);
+  margin: 0;
+  text-align: center;
+}
+
+/* Representative */
+.intro-page__rep-role {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--c-green);
+  margin: 0 0 0.25rem;
+}
+
+.intro-page__rep-name {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  color: var(--c-text);
+  margin: 0 0 1rem;
+}
+
+.intro-page__rep-message {
+  margin-bottom: 1rem;
+}
+
+.intro-page__rep-image-wrap {
+  width: 100%;
+  border-radius: 0.326rem;
+  overflow: hidden;
+  box-shadow: 0 2.607px 3.911px -0.652px rgba(0, 0, 0, 0.1), 0 1.304px 2.607px -1.304px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 351 / 209;
+}
+
+.intro-page__rep-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Table card (従業員数) */
+.intro-page__table-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.intro-page__table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 2.9375rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.intro-page__table-row--last {
+  border-bottom: none;
+  min-height: 2.375rem;
+}
+
+.intro-page__table-label {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.intro-page__table-value {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--c-text);
+}
+
+/* Clients card (取引先) */
+.intro-page__clients-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.intro-page__clients-card p {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--c-text);
+  margin: 0;
+}
+
+/* License box */
+.intro-page__license-box {
+  background: #eff6e5;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.intro-page__license-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #74d170;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.intro-page__license-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.intro-page__license-title {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--c-text);
+  margin: 0;
+}
+
+.intro-page__license-sub {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
+
+/* Introduction page: 768px+ */
+@media (min-width: 768px) {
+  .intro-page__inner {
+    padding: 3rem 1.5rem 5rem;
+    gap: 4rem;
+  }
+
+  .intro-page__section-title {
+    font-size: 1.125rem;
+  }
+
+  .intro-page__map-wrap {
+    max-width: 100%;
+  }
+
+  .intro-page__mission-box {
+    padding: 1.25rem;
+  }
+
+  .intro-page__mission-catch {
+    font-size: 1.125rem;
+  }
+}
+
+/* Introduction page: 1024px+ */
+@media (min-width: 1024px) {
+  .intro-page__inner {
+    padding: 4rem 2rem 6rem;
+    gap: 4rem;
+    max-width: min(75rem, calc(100% - 4rem));
+    margin: 0 auto;
+  }
+
+  .intro-page__section-title {
+    font-size: 1.125rem;
+  }
+
+  .intro-page__body {
+    font-size: 0.875rem;
+    max-width: 42rem;
+  }
+
+  .intro-page__rep-message {
+    max-width: 42rem;
+  }
+
+  .intro-page__table-card,
+  .intro-page__clients-card {
+    max-width: 24rem;
+  }
+}
+
+/* ========================================
+   QA ページ（よくあるご質問）
+   Figma SP を正としたモバイルファースト
+   ======================================== */
+
+/* QA 導入セクション */
+.qa-intro {
+  background: #fff;
+  padding: 3rem 1rem;
+}
+
+.qa-intro__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.qa-intro__title {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0.125rem;
+  color: #3b3b3b;
+  margin: 0;
+}
+
+.qa-intro__lead {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.075rem;
+  color: #3b3b3b;
+  margin: 0;
+}
+
+/* FAQ アコーディオンセクション */
+.qa-accordion-section {
+  padding: 0 1rem 2.5rem;
+  background: #fff;
+}
+
+.qa-accordion-section__inner {
+  max-width: 100%;
+}
+
+.qa-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.qa-accordion__item {
+  background: #f9faf6;
+  border: 1px solid #74d170;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.qa-accordion__trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.qa-accordion__q {
+  flex-shrink: 0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #74d170;
+}
+
+.qa-accordion__question {
+  flex: 1;
+  min-width: 0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0.0875rem;
+  color: #3b3b3b;
+}
+
+.qa-accordion__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 15px;
+  color: #46c740;
+  transition: transform 0.2s ease;
+}
+
+.qa-accordion__item--open .qa-accordion__icon {
+  transform: rotate(45deg);
+}
+
+.qa-accordion__icon svg {
+  display: block;
+  width: 14px;
+  height: 15px;
+}
+
+.qa-accordion__panel {
+  border-top: 1px solid rgba(116, 209, 112, 0.2);
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.qa-accordion__panel[hidden] {
+  display: none;
+}
+
+.qa-accordion__a-label {
+  flex-shrink: 0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #ff7286;
+  margin: 0;
+}
+
+.qa-accordion__answer {
+  flex: 1;
+  min-width: 0;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.0875rem;
+  color: #3b3b3b;
+}
+
+.qa-accordion__answer p {
+  margin: 0;
+}
+
+/* Tablet: 768px */
+@media (min-width: 768px) {
+  .qa-intro {
+    padding: 3rem 1.5rem;
+  }
+
+  .qa-intro__title {
+    font-size: 1.375rem;
+  }
+
+  .qa-intro__lead {
+    font-size: 0.8125rem;
+  }
+
+  .qa-accordion-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .qa-accordion__question {
+    font-size: 0.9375rem;
+  }
+
+  .qa-accordion__answer,
+  .qa-accordion__answer p {
+    font-size: 0.9375rem;
+  }
+}
+
+/* PC: 1024px */
+@media (min-width: 1024px) {
+  .qa-intro {
+    padding: 4rem 2rem;
+  }
+
+  .qa-intro__inner {
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .qa-intro__title {
+    font-size: 1.5rem;
+  }
+
+  .qa-intro__lead {
+    font-size: 0.875rem;
+  }
+
+  .qa-accordion-section {
+    padding-bottom: 4rem;
+  }
+
+  .qa-accordion-section__inner {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .qa-accordion__trigger {
+    padding: 1rem 1.25rem;
+  }
+
+  .qa-accordion__panel {
+    padding: 1rem 1.25rem 1rem 1.25rem;
+  }
+}
+
+/* PC: 1280px（余白拡張） */
+@media (min-width: 1280px) {
+  .qa-intro {
+    padding: 4rem 2.5rem;
+  }
+
+  .qa-accordion-section__inner {
+    max-width: 48rem;
+  }
+}
+
+/* ========================================
+   Contact ページ（資料請求・無料相談）
+   Figma SP を正としたモバイルファースト
+   ======================================== */
+
+/* Hero：service-hero を流用（同一グラデーション） */
+.contact-hero.service-hero {
+  padding: 3rem 0;
+}
+
+.contact-hero .service-hero__title {
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.contact-hero .service-hero__sub {
+  font-size: 0.75rem;
+  letter-spacing: 0.1125rem;
+}
+
+/* 説明文セクション */
+.contact-intro {
+  background: #fff;
+  padding: 3rem 1rem;
+}
+
+.contact-intro__inner {
+  max-width: 100%;
+}
+
+.contact-intro__text {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.075rem;
+  color: var(--c-text);
+  margin: 0;
+}
+
+/* フォームセクション */
+.contact-form-section {
+  background: #fff;
+  padding: 0 1rem 2.5rem;
+}
+
+.contact-form-section__inner {
+  max-width: 23.4375rem;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9375rem;
+  width: 100%;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact-form__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--c-text);
+}
+
+.contact-form__label-text {
+  flex-shrink: 0;
+}
+
+.contact-form__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.375rem;
+  padding: 0 0.5625rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.contact-form__badge--required {
+  background: #ffe5e5;
+  border: 1px solid #ffd9d9;
+  color: #e54c4c;
+}
+
+.contact-form__badge--optional {
+  background: #e5ecff;
+  border: 1px solid #d9ddff;
+  color: #4c84e5;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 0.5rem 0.75rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--c-text);
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  color: #99a1af;
+}
+
+.contact-form__input {
+  height: 3rem;
+}
+
+.contact-form__textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.contact-form__field--radio-group .contact-form__label {
+  margin-bottom: 0;
+}
+
+.contact-form__radios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact-form__radio-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--c-text);
+  cursor: pointer;
+}
+
+.contact-form__radio {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1.5px solid var(--c-text);
+  border-radius: 50%;
+  margin: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.contact-form__radio:checked {
+  border-color: #003881;
+  border-width: 1.5px;
+  background: radial-gradient(circle at 50% 50%, #003881 0%, #003881 45%, transparent 50%);
+}
+
+.contact-form__radio-text {
+  flex-shrink: 0;
+}
+
+.contact-form__field--checkbox {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-form__checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  color: var(--c-text);
+  cursor: pointer;
+}
+
+.contact-form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.contact-form__checkbox-box {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #d1d5dc;
+  border-radius: 4px;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.contact-form__checkbox:checked + .contact-form__checkbox-box {
+  background: #003881;
+  border-color: #003881;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10' viewBox='0 0 12 10' fill='none'%3E%3Cpath d='M1 5L4.5 8.5L11 1.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-form__privacy-link {
+  color: var(--c-green);
+  text-decoration: none;
+}
+
+.contact-form__privacy-link:hover {
+  text-decoration: underline;
+}
+
+.contact-form__submit-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-form__submit {
+  width: 15rem;
+  height: 3.5rem;
+  padding: 1rem 2rem;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background: #777;
+  border: none;
+  border-radius: 10rem;
+  cursor: not-allowed;
+  opacity: 0.5;
+  box-shadow: var(--shadow-pill);
+}
+
+/* Tablet: 768px */
+@media (min-width: 768px) {
+  .contact-hero.service-hero {
+    padding: 4rem 0;
+  }
+
+  .contact-hero .service-hero__title {
+    font-size: 1.75rem;
+  }
+
+  .contact-hero .service-hero__sub {
+    font-size: 0.875rem;
+  }
+
+  .contact-intro {
+    padding: 3rem 1.5rem;
+  }
+
+  .contact-intro__text {
+    font-size: 0.8125rem;
+  }
+
+  .contact-form-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .contact-form-section__inner {
+    max-width: 28rem;
+  }
+
+  .contact-form__input,
+  .contact-form__textarea {
+    font-size: 0.9375rem;
+  }
+}
+
+/* PC: 1024px */
+@media (min-width: 1024px) {
+  .contact-hero.service-hero {
+    padding: 5rem 0;
+  }
+
+  .contact-hero .service-hero__title {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .contact-hero .service-hero__sub {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .contact-intro {
+    padding: 4rem 2rem;
+  }
+
+  .contact-intro__inner {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-intro__text {
+    font-size: 0.875rem;
+    letter-spacing: 0.0875rem;
+  }
+
+  .contact-form-section {
+    padding-bottom: 4rem;
+  }
+
+  .contact-form-section__inner {
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-form {
+    gap: 2rem;
+  }
+}
+
+/* PC: 1280px（余白拡張） */
+@media (min-width: 1280px) {
+  .contact-intro {
+    padding: 4rem 2.5rem;
+  }
+
+  .contact-form-section__inner {
+    max-width: 40rem;
+  }
+}
