@@ -40,11 +40,11 @@
 
         <nav class="site-header__nav" aria-label="グローバルナビゲーション">
           <ul class="site-header__nav-list">
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="index.html#top">トップ</a></li>
             <li class="site-header__nav-item"><a class="site-header__nav-link" href="service.html">サービス紹介</a></li>
             <li class="site-header__nav-item"><a class="site-header__nav-link" href="schedule.html">1日の過ごし方</a></li>
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="staff.html">スタッフ紹介</a></li>
             <li class="site-header__nav-item"><a class="site-header__nav-link" href="flow.html">ご利用の流れ</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link" href="voice.html">利用者の声</a></li>
+            <li class="site-header__nav-item"><a class="site-header__nav-link site-header__nav-link--cta" href="contact.html">資料請求</a></li>
           </ul>
         </nav>
       </div>
@@ -179,11 +179,13 @@
     <div class="site-footer__inner l-container">
       <div class="site-footer__content">
         <div class="site-footer__brand">
-          <img src="figma-assets/logo-symbol.svg" alt="" class="site-footer__symbol" />
-          <div class="site-footer__brand-text">
-            <span class="site-footer__brand-sub">就労継続支援B型</span>
-            <span class="site-footer__brand-main">アルト</span>
-          </div>
+          <a href="index.html" class="site-footer__brand-link" aria-label="トップページへ">
+            <img src="figma-assets/logo-symbol.svg" alt="" class="site-footer__symbol" />
+            <div class="site-footer__brand-text">
+              <span class="site-footer__brand-sub">就労継続支援B型</span>
+              <span class="site-footer__brand-main">アルト</span>
+            </div>
+          </a>
         </div>
         <div class="site-footer__info">
           <p class="site-footer__label">住所</p>
@@ -203,7 +205,7 @@
         <nav class="site-footer__links">
           <ul class="site-footer__links-col">
             <li><a href="service.html">サービス紹介</a></li>
-            <li><a href="schedule.html">一日の過ごし方</a></li>
+            <li><a href="schedule.html">1日の過ごし方</a></li>
             <li><a href="flow.html">ご利用の流れ</a></li>
             <li><a href="voice.html">利用者の声</a></li>
             <li><a href="introduction.html">事業所紹介</a></li>
@@ -224,6 +226,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- SP用：下部固定CTA -->
+  <div class="fixed-cta-bar" id="fixed-cta-bar" aria-hidden="true">
+    <a class="fixed-cta-bar__link" href="contact.html">
+      <img src="figma-assets/sp-cta.png" alt="資料請求・無料相談" class="fixed-cta-bar__image" width="240" height="80" />
+    </a>
+  </div>
 
   <script src="main.js"></script>
   <script>
