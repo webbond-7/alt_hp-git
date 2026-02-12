@@ -2328,6 +2328,16 @@ a {
 
 /* Service Page Styles（service フォルダ仕様） */
 /* Hero（サービス・スケジュール・ご利用の流れ 各ページ共通） */
+/* 緑7:オレンジ3のゆっくりした背景アニメーション */
+@keyframes service-hero-bg {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
 .service-hero {
   width: 100%;
   padding: 3rem 0;
@@ -2338,7 +2348,18 @@ a {
   color: #fff;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(132.74deg, rgb(162, 225, 160) 59.06%, rgb(255, 227, 181) 85.42%);
+  /* 緑7:オレンジ3のグラデーションをゆっくり動かす */
+  background: linear-gradient(
+    135deg,
+    rgb(162, 225, 160) 0%,
+    rgb(162, 225, 160) 35%,
+    rgb(255, 227, 181) 50%,
+    rgb(162, 225, 160) 65%,
+    rgb(162, 225, 160) 100%
+  );
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  animation: service-hero-bg 12s ease-in-out infinite;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
